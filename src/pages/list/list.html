@@ -1,23 +1,24 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>List</ion-title>
-  </ion-navbar>
+	<ion-navbar>
+		<button ion-button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>Transactions</ion-title>
+	</ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-end>
-        {{item.note}}
-      </div>
-    </button>
-  </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>
+	<div class="row header">
+		<div class="col">Date</div>
+		<div class="col">Type</div>
+		<div class="col" style="text-align:right">Amount</div>
+		<div class="col" style="text-align:right">Earning</div>
+	</div>
+	<div class="row" *ngFor="let transaction of transactions">
+		<div class="col">{{transaction.date}}</div>
+		<div class="col">{{transaction.type}}</div>
+		<div class="col" style="text-align:right">$ {{transaction.amount}}</div>
+		<div class="col" style="text-align:right">$ {{transaction.earning}}</div>
+	</div>
+
 </ion-content>

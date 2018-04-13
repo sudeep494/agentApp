@@ -1,3 +1,15 @@
 page-list {
-
+	padding:50px;
+	.row{
+		margin: 0 30px;
+		padding: 8px 0;
+		border-bottom: 1px solid #ccc;
+	}
+	.row.header{
+		margin-top:30px;
+		border-bottom: 2px solid #666;
+		.col{
+			font-weight: bold;
+		}
+	}
 }

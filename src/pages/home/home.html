@@ -1,18 +1,96 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+	<ion-navbar>
+		<button ion-button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>Dashboard</ion-title>
+	</ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+	<ion-grid>
+		<ion-row>
+				<ion-col col-lg-4 col-md-12 col-sm-12 col-xs-12>
+					<ion-card style="min-width:300px;">
+						<!-- <img src="http://reny.net/Capital-Region-NY-Areas/images/Rotterdam-House-for-Sale.jpg"/> -->
+						<h1 class="text-success" style="float:left; padding:40px;border-right:2px solid green; margin-right:20px;">6</h1>
+						<ion-card-content>
+							<ion-card-title>
+								Active Listings
+							</ion-card-title>
+							<p>
+								You have 6 active listings.
+							</p>
+						</ion-card-content>
+					</ion-card>
+				</ion-col>
+				<ion-col col-lg-4 col-md-12 col-sm-12 col-xs-12>
+					<ion-card style="min-width:300px;">
+						<!-- <img src="http://emailflyers.net/flyers/13589/33383-1.jpg"/> -->
+						<h1 class="text-success" style="float:left; padding:40px;border-right:2px solid blue; margin-right:20px;">1</h1>
+						<ion-card-content>
+							<ion-card-title>
+								Open Houses
+							</ion-card-title>
+							<p>
+								You have 1 open house at 6pm.
+							</p>
+						</ion-card-content>
+					</ion-card>
+				</ion-col>
+				<ion-col col-lg-4 col-md-12 col-sm-12 col-xs-12>
+					<ion-card style="min-width:300px;">
+						<!-- <img src="https://content.mykukun.com/wp-content/uploads/2017/08/10101811/house-exterior-colors.jpg"/> -->
+						<h1 class="text-success" style="float:left; padding:40px;border-right:2px solid red; margin-right:20px;">2</h1>
+						<ion-card-content>
+							<ion-card-title>
+								Active Offers
+								</ion-card-title>
+							<p>
+								You have 2 Pending Offers.
+							</p>
+						</ion-card-content>
+					</ion-card>
+				</ion-col>
+			</ion-row>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+			<ion-row>
+
+				<ion-col col-lg-4 col-md-12 col-sm-12 col-xs-12>
+					<ion-card style="min-width:300px;">
+						<img src="/assets/imgs/chart.png"/>
+						<ion-card-content>
+							<p>
+								Transactions by month
+							</p>
+						</ion-card-content>
+					</ion-card>
+				</ion-col>
+				<ion-col col-lg-4 col-md-12 col-sm-12 col-xs-12>
+					<ion-card style="min-width:300px;">
+						<img src="/assets/imgs/chart.png"/>
+						<ion-card-content>
+							<p>
+								Transactions by month
+							</p>
+						</ion-card-content>
+					</ion-card>
+				</ion-col>
+				<ion-col col-lg-4 col-md-12 col-sm-12 col-xs-12>
+					<ion-card style="min-width:300px;">
+						<img src="/assets/imgs/chart.png"/>
+						<ion-card-content>
+							<p>
+								Transactions by month
+							</p>
+						</ion-card-content>
+					</ion-card>
+				</ion-col>
+
+			</ion-row>
+
+			</ion-grid>
+
+	<!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->
 </ion-content>
