@@ -1,0 +1,8 @@
+{
+  "name": "agentApp",
+  "app_id": "c9df9d42",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
